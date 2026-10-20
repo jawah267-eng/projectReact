@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import UserForm from "../components/UserForm";
 import Login from "../components/login";
 import Card from "../components/card";
+import Form from "../components/form";
 
 interface HeaderProps {
   firstlink: string;
@@ -44,7 +45,8 @@ const Home = () => {
   <UserForm onSubmit={(data) => console.log(data)} formData={formData} setFormData={setFormData} />
     <UserForm onSubmit={onSubmit} formData={formData} setFormData={setFormData} />
   <Login />
-  <Card />
+  <Card /><br/><hr/>
+  <Form/>
     </>
 
   )

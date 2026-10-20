@@ -20,12 +20,12 @@ const onCancle=(e)=>{
 }
   return (
     <form >
-      <InputField name="Name" 
+      {/* <InputField name="Name" 
       value={formData.name}
        onchange={(e) => setFormData({...formData, name: e.target.value})} />
       <InputField name="Email" value={formData.email} onchange={(e) => setFormData({...formData, email: e.target.value})} />
       <button type="submit">Submit</button>
-      <button type="button" onClick={onCancle}>Cancel</button>
+      <button type="button" onClick={onCancle}>Cancel</button> */}
     </form>
   );
 }
