@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import UserForm from "../components/UserForm";
 import Login from "../components/login";
 import Card from "../components/card";
@@ -29,9 +29,13 @@ const Main =({children}:{children: React.ReactNode})=>{
 
 const Home = () => {
   const [formData, setFormData] = useState({ name: '', email: '' });
+ 
   const onSubmit=()=>{
     alert(`Name: ${formData.name}, Email: ${formData.email}`);
   }
+  useEffect(() => {
+    console.log('Form data updated:');
+  });
   return (
     <>
     <div>jawa</div>
